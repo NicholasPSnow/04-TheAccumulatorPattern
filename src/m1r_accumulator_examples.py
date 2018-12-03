@@ -38,20 +38,20 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #     c. If you want a loop that runs from r to s, inclusive, assuming s >= r,
 #          what expression would you use in the _____ below?
 #
-#            for k in range(r,s+1):
+#            for k in range(s+1-r):
 #
 #     d. If you want a loop that runs from (r + 4) to (s - 10),
 #          including the (r + 4) but not including the (s - 10),
 #          what expression would you use in the _____ below?
 #
-#            for k in range((r+4),(s-10)):
+#            for k in range((s-10)-(r-4)):
 #
 #     e. The following code snippet attempts to return the number
 #          of integers from r to s, inclusive, whose cosines are positive.
 #          It has at least 5 distinct errors (one per line).  What are they?
 #              import math
-#              for k in range(r , s+1):
-#                  count = 0
+#              count = 0
+#              for k in range(s+1-r):
 #                  if math.cos(k) > 0:
 #                      count = count+1
 #              return count
